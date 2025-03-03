@@ -1,5 +1,7 @@
 // This is your public test API key.
-const stripe = Stripe("pk_test_51QP5vhDiRHn1y6KSTBWC1fAsVHDA0uNdOd9bBhrhAZO4tPRlME6MyvLz6ZSoCcUFqDCeb4OX8QkKYopDQfDRWBEh00nSBKsbYK");
+const stripe = Stripe("pk_test_51QP5vhDiRHn1y6KSTBWC1fAsVHDA0uNdOd9bBhrhAZO4tPRlME6MyvLz6ZSoCcUFqDCeb4OX8QkKYopDQfDRWBEh00nSBKsbYK",
+{betas: ['embedded_checkout_byol_beta_1']
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   initialize();
