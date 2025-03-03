@@ -1,5 +1,6 @@
 // This is your test secret API key.
-const stripe = require('stripe')('sk_test_51QP5vhDiRHn1y6KS8FNCG2qVFz7baXDuDkKt60dUdiqo1dLZinPSLMLIJJSNon2IGPd5sk5DoM3WuMxdC0xcvrwj00kSrYbGZU');
+const stripe = require('stripe')('sk_test_51QP5vhDiRHn1y6KS8FNCG2qVFz7baXDuDkKt60dUdiqo1dLZinPSLMLIJJSNon2IGPd5sk5DoM3WuMxdC0xcvrwj00kSrYbGZU',
+{apiVersion: '2024-11-20.acacia; checkout_server_update_beta=v1'});
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
